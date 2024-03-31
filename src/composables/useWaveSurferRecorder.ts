@@ -4,7 +4,7 @@ import type {WaveSurferIns} from "@/types";
 import {useWaveSurferInstance} from "@/composables/useWaveSurferInstance";
 
 
-export const useUseWaveSurferRecorder = ({ containerRef, options }: WaveSurferIns) => {
+export const useWaveSurferRecorder = ({ containerRef, options }: WaveSurferIns) => {
     const { waveSurfer } = useWaveSurferInstance({ containerRef, options })
     const waveSurferRecorder = ref<RecordPlugin | null>(null)
     const recordingTime = ref<number>(0)
